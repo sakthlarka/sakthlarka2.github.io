@@ -1,0 +1,278 @@
+html {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 10px;
+    background-color: #2d3740;
+}
+
+body {
+    padding: 1rem;
+    background-color: #1c262f;
+    color: rgb(230, 225, 225);
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+svg{
+    width: 25%;
+    height: 25%;
+    margin-bottom: 20px;
+}
+
+svg:hover {
+    fill: green;
+}
+
+#heading-for-project {
+    cursor: pointer;
+    width: 150px;
+    border-right: 5px solid white;
+}
+
+.heading-tracker {
+    cursor: pointer;
+}
+
+.logo {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+input[type="number"] {
+    background: rgb(230, 225, 225);
+    width: 80%;
+    margin: 1rem 0;
+    padding: 0.7rem 0;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+    grid-column: 2 / 6;
+    grid-row: 6 / 7;
+}
+
+button {
+    grid-column: 2 / 6;
+    grid-row: 7 / 8;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background: #adadad;
+    margin: 0.5rem 0 1rem 0;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-color: white;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+li {
+    border: 1px solid;
+    padding: 1rem 1.5rem;
+}
+
+.entriesWrapper {
+    padding: 3rem 0;
+    font-size: 1.6rem;
+}
+
+.entriesWrapper h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.data {
+    font-size: 1.4rem;
+}
+
+.data div {
+    background: #141c22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.progress {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.progress h3 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.progressCircleWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#progressCircle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    /* background: conic-gradient(#70db70 50%, #2d3740 50%); */
+    background: #2d3740;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressCenter {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #1c262f;
+}
+
+.footer {
+    background: #1c262f;
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.made-by,
+.contact a {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        width: 85%;
+    }
+
+    input[type='number'] {
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .footer {
+        background: #1c262f;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 7vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 10px;
+    }
+    
+    .contact a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+    
+    .contact {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: auto;
+        width: 200px;
+    }
+
+    .made-by,
+    .contact a {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1.2rem;
+        margin: auto;
+    }   
+
+    .made-by {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 600px) {
+    ul {
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    li {
+        border: 1px solid;
+        padding: 1rem 1.5rem;
+        width: 25px;
+        text-align: center;
+    }
+    
+    .entriesWrapper {
+        padding: 3rem 0;
+        font-size: 1.6rem;
+    }
+    
+    .entriesWrapper h3 {
+        margin: 0;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    #entries {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #progressCircle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        /* background: conic-gradient(#70db70 50%, #2d3740 50%); */
+        background: #2d3740;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #progressCenter {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #1c262f;
+    }
+}
